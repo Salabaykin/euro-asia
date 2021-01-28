@@ -1,0 +1,81 @@
+html 
+    box-sizing: border-box
+    font-size: 100%
+  
+*, *::before, *::after 
+    box-sizing: inherit
+    
+body 
+    position: relative
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif
+    line-height: 1.5
+    font-size: 1rem
+
+a:active, a:focus 
+    outline: none
+
+input, textarea 
+    outline: none
+
+input:active, textarea:active
+    outline: none
+
+input:focus, textarea:focus
+    outline: none
+
+button:active, button:focus
+    outline: none
+
+textarea
+    overflow: auto
+
+h1, h2, h3, h4, h5, ul
+    padding: 0
+    margin: 0
+
+li 
+    list-style: none
+
+p 
+    padding: 0
+    margin: 0
+
+a 
+    color: #000000
+    text-decoration: none
+    transition: color 0.2s
+    &:hover
+        color: $c-pri
+
+a, img, li, button, span, select
+    text-decoration: none
+    outline: none
+    user-select: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+
+select
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+select::-ms-expand 
+    display: none
+
+.select
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 10px 
+        width: 13px
+        height: 8px
+        background: url('../images/icons/select-arrow.svg')
+        background-size: cover 
+
+button
+    border: none 
+    cursor: pointer
