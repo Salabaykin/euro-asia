@@ -16,10 +16,10 @@
 .btn
     position: relative
     display: inline-block
+    box-sizing: border-box
     padding: 15px 30px
     font-weight: 600
     font-size: 16px
-    line-height: 20px
     color: #FFFFFF
     background-color: $c-pri
     border: none 
@@ -28,12 +28,77 @@
     &:hover
         color: #ffffff
         background-color: $c-dpri
-    &-arrow
+    &-transparent
+        background-color: transparent
+        padding-left: 0
+        color: #000000
+        &:hover
+            color: #000000
+            background-color: transparent
+    &-yellow
+        color: #ffffff
+        background-color: $c-sec
+        &:hover
+            background-color: darken($c-sec, 15%)
+    &-link
+        padding-right: 50px
+        &:hover
+            .btn-arrow, 
+            .btn-arrow-dark
+                right: 25px
+                animation: link-arrow 0.3s ease
+    &-arrow, 
+    &-arrow-dark
         position: absolute
         top: 50%
         transform: translateY(-50%)
         right: 20px
         width: 19px
         height: 19px
+        transition: all 0.3s
+    &-arrow
         background: url('../images/icons/link-arrow.svg')
         background-size: cover 
+    &-arrow-dark
+        background: url('../images/icons/link-arrow-dark.svg')
+        background-size: cover 
+    &-basket
+        width: 100%
+        padding: 15px
+        display: flex
+        align-items: center
+        justify-content: center
+        .icon-svg
+            margin-right: 10px
+            width: 18px
+            height: 15px
+            fill: #ffffff
+
+@keyframes link-arrow
+    0%
+        right: 20px
+    100%
+        right: 25px
+
+.v-sale
+    position: absolute
+    top: 20px
+    left: 0
+    padding: 10px 15px 10px 25px
+    background-color: $c-sec
+    font-weight: 600
+    font-size: 13px
+    line-height: 16px
+    text-transform: uppercase
+    color: #ffffff
+    border-radius: 0 4px 4px 0
+
+.section-title
+    margin-bottom: 30px
+    display: flex
+    justify-content: space-between
+    h2 
+        display: block
+        font-weight: 500
+        font-size: 24px
+        color: #000000

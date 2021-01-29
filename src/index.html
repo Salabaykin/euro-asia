@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Euro Asia</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 <body>
@@ -31,7 +32,12 @@
                     <div class="header-top-personal">
                         <div class="authorization">
                             <div class="log-in">
-                                <a href="#" class="header-link"><span class="icon"></span> <span class="txt">Войти</span></a>
+                                <a href="#" class="header-link">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/sprite.svg#log-in"></use>
+                                    </svg>
+                                    <span class="txt">Войти</span>
+                                </a>
                             </div>
                             <div class="registration">
                                 <a href="#" class="header-link">Регистрация</a>
@@ -39,10 +45,20 @@
                         </div>
                         <div class="personal-link">
                             <div class="log-out">
-                                <a href="#" class="header-link"><span class="icon"></span><span class="txt">Выйти</span></a>
+                                <a href="#" class="header-link">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/sprite.svg#log-out"></use>
+                                    </svg>
+                                    <span class="txt">Выйти</span>
+                                </a>
                             </div>
                             <div class="personal-page">
-                                <a href="#" class="header-link"><span class="icon"></span><span class="txt">Личный кабинет</span></a>
+                                <a href="#" class="header-link">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/sprite.svg#user"></use>
+                                    </svg>
+                                    <span class="txt">Личный кабинет</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -343,43 +359,609 @@
     </header>
     <!-- /.header -->
 
-    <section class="sale">
+    <main class="main">
+
+        <section class="sale">
+            <div class="container">
+    
+                <div class="sale__wrap">
+    
+                    <div class="sale-item-big">
+    
+                        <div class="sale-item">
+    
+                            <div class="sale-item__body">
+                                <span class="v-sale">Акция</span>
+                                <h2 class="sale-item__title">Скидки на детали тормозной системы</h2>
+                                <a href="#" class="btn btn-link sale-item__link"><i class="btn-arrow"></i> Подробнее</a>
+                                <span class="sale-item__info">Акция действует с 15.05.2021 по 30.05.2021</span>
+                            </div>
+    
+                            <div class="sale-item__img">
+                                <img src="images/sale/sale-img-1.jpg" alt="">
+                            </div>
+    
+                        </div>
+                        <!-- /.sale-item -->
+    
+                    </div>
+                    <div class="sale-item-small">
+    
+                        <div class="sale-item">
+                            <h2 class="sale-item__title">Меняем баллы за OSRAM и NEOLUX на оборудование !</h2>
+                            <a href="#" class="btn btn-transparent btn-link"><i class="btn-arrow-dark"></i> Подробнее</a>
+                        </div>
+                        <!-- /.sale-item -->
+    
+                        <div class="sale-item">
+                            <h2 class="sale-item__title">Меняем баллы за OSRAM и NEOLUX на оборудование !</h2>
+                            <a href="#" class="btn btn-transparent btn-link"><i class="btn-arrow-dark"></i> Подробнее</a>
+                        </div>
+                        <!-- /.sale-item -->
+    
+                    </div>
+                    
+    
+                </div>
+    
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.sale -->
+        
+        <section class="category">
+            <div class="container">
+    
+                <div class="category__wrap">
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Амортизаторы</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">ДВС</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Кузов</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                    <a href="#" class="category-item">
+                        <span class="category-item__icon">
+                            <svg class="category-item__svg">
+                                <use xlink:href="images/sprite.svg#category-icon-1"></use>
+                            </svg>
+                        </span>
+                        <h3 class="category-item__title">Система охлаждения</h3>
+                    </a>
+                    <!-- /.category-item -->
+    
+                </div>
+                <!-- /.category__wrap -->
+    
+                <div class="category-all">
+                    <a href="#" class="btn category-all__btn">Все категории</a>
+                </div>
+                <!-- /.category-all -->
+    
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.category -->
+    
+        <section class="popular">
+            <div class="container">
+    
+                <div class="section-title">
+                    <h2>Популярные товары</h2>
+    
+                    <div class="popular-slider-nav">
+                        <div class="popular-slider-prev">
+                            <img src="images/icons/slider-arrow.svg" alt="">
+                        </div>
+                        <div class="popular-slider-next">
+                            <img src="images/icons/slider-arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="popular__wrap">
+    
+                    <div class="popular-slider swiper-container">
+    
+                        <div class="swiper-wrapper">
+    
+                            <div class="swiper-slide">
+                                <div class="popular-item">
+                                    <span class="v-sale">Акция</span>
+                                    <div class="popular-item__img">
+                                        <a href="#"><img src="images/card/card-img-1.jpg" alt="Пускозарядное устройство"></a>
+                                    </div>
+                                    <div class="popular-item__body">
+                                        <div class="popular-item__category-name">
+                                            <a href="#">Название категории</a>
+                                        </div>
+                                        <div class="popular-item__title">
+                                            <h3><a href="#">Пускозарядное устройство 12В, 80А (от 220В)</a></h3>
+                                        </div>
+                                        <div class="popular-item__price">
+                                            <span>8600 руб.</span>
+                                            7999 руб.
+                                        </div>
+                                        <div class="popular-item__busket">
+                                            <button type="button" class="btn btn-basket">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="images/sprite.svg#basket"></use>
+                                                </svg>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="popular-item">
+                                    <div class="popular-item__img">
+                                        <a href="#"><img src="images/card/card-img-1.jpg" alt="Пускозарядное устройство"></a>
+                                    </div>
+                                    <div class="popular-item__body">
+                                        <div class="popular-item__category-name">
+                                            <a href="#">Название категории категории категории</a>
+                                        </div>
+                                        <div class="popular-item__title">
+                                            <h3><a href="#">Пускозарядное устройство 12В, 80А (от 220В)</a></h3>
+                                        </div>
+                                        <div class="popular-item__price">
+                                            <span>800600 руб.</span>
+                                            70999 руб.
+                                        </div>
+                                        <div class="popular-item__busket">
+                                            <button type="button" class="btn btn-basket">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="images/sprite.svg#basket"></use>
+                                                </svg>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="popular-item">
+                                    <div class="popular-item__img">
+                                        <a href="#"><img src="https://www.pnp.ru/upload/entities/2019/12/18/article/detailPicture/90/ac/96/c7/28dc349f219c5ff70af0b64bbae3632b.jpg" alt="Пускозарядное устройство"></a>
+                                    </div>
+                                    <div class="popular-item__body">
+                                        <div class="popular-item__category-name">
+                                            <a href="#">Название категории</a>
+                                        </div>
+                                        <div class="popular-item__title">
+                                            <h3><a href="#">Пускозарядное устройство 12В, 80А (от 220В)</a></h3>
+                                        </div>
+                                        <div class="popular-item__price">
+                                            <span>8600 руб.</span>
+                                            7999 руб.
+                                        </div>
+                                        <div class="popular-item__busket">
+                                            <button type="button" class="btn btn-basket">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="images/sprite.svg#basket"></use>
+                                                </svg>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="popular-item">
+                                    <div class="popular-item__img">
+                                        <a href="#"><img src="images/card/card-img-1.jpg" alt="Пускозарядное устройство"></a>
+                                    </div>
+                                    <div class="popular-item__body">
+                                        <div class="popular-item__category-name">
+                                            <a href="#">Название категории</a>
+                                        </div>
+                                        <div class="popular-item__title">
+                                            <h3><a href="#">Пускозарядное устройство 12В, 80А (от 220В)</a></h3>
+                                        </div>
+                                        <div class="popular-item__price">
+                                            <span>8600 руб.</span>
+                                            7999 руб.
+                                        </div>
+                                        <div class="popular-item__busket">
+                                            <button type="button" class="btn btn-basket">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="images/sprite.svg#basket"></use>
+                                                </svg>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="popular-item">
+                                    <div class="popular-item__img">
+                                        <a href="#"><img src="images/card/card-img-1.jpg" alt="Пускозарядное устройство"></a>
+                                    </div>
+                                    <div class="popular-item__body">
+                                        <div class="popular-item__category-name">
+                                            <a href="#">Название категории</a>
+                                        </div>
+                                        <div class="popular-item__title">
+                                            <h3><a href="#">Пускозарядное устройство 12В, 80А (от 220В)</a></h3>
+                                        </div>
+                                        <div class="popular-item__price">
+                                            <span>8600 руб.</span>
+                                            7999 руб.
+                                        </div>
+                                        <div class="popular-item__busket">
+                                            <button type="button" class="btn btn-basket">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="images/sprite.svg#basket"></use>
+                                                </svg>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="popular-item">
+                                    <div class="popular-item__img">
+                                        <a href="#"><img src="images/card/card-img-1.jpg" alt="Пускозарядное устройство"></a>
+                                    </div>
+                                    <div class="popular-item__body">
+                                        <div class="popular-item__category-name">
+                                            <a href="#">Название категории</a>
+                                        </div>
+                                        <div class="popular-item__title">
+                                            <h3><a href="#">Пускозарядное устройство 12В, 80А (от 220В)</a></h3>
+                                        </div>
+                                        <div class="popular-item__price">
+                                            <span>8600 руб.</span>
+                                            7999 руб.
+                                        </div>
+                                        <div class="popular-item__busket">
+                                            <button type="button" class="btn btn-basket">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="images/sprite.svg#basket"></use>
+                                                </svg>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <!-- /.popular-slider -->
+    
+                </div>
+                <!-- /.popular__wrap -->
+    
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.popular -->
+        
+        <section class="questions">
+            <div class="container">
+    
+                <div class="questions__wrap">
+    
+                    <div class="questions-left">
+    
+                        <div class="questions__title">
+                            Остались вопросы? 
+                            <span>Напишите нам!</span>
+                        </div>
+    
+                    </div>
+                    <!-- /.questions-left -->
+    
+                    <div class="questions-right">
+    
+                        <form action="#" class="questions-form">
+    
+                            <div class="questions-form-top">
+                                <div class="questions-form__input">
+                                    <label for="user-name">Ваше имя:</label>
+                                    <div class="input input-user">
+                                        <input type="text" name="user-name" id="user-name" required>
+                                    </div>
+                                </div>
+                                <div class="questions-form__input">
+                                    <label for="user-tel">Ваш номер телефона:</label>
+                                    <div class="input input-tel">
+                                        <input type="tel" name="user-tel" id="user-tel" required>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="questions-form-message">
+                                <div class="questions-form__text">
+                                    <label for="user-message">Ваше сообщение:</label>
+                                    <textarea name="user-message" id="user-message" required></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="questions-form-bottom">
+                                <div class="questions-form__btn">
+                                    <button class="btn btn-link btn-yellow"><i class="btn-arrow"></i> Отправить</button>
+                                </div>
+                                <div class="questions-form__policy">
+                                    <span>Нажимая кнопку “Отправить”, Вы соглашаетесь с <a href="#" target="_blank" rel="noopener noreferrer">правилами обработки персональных данных</a></span>
+                                </div>
+                            </div>
+    
+                        </form>
+                        <!-- /.questions-form -->
+    
+                    </div>
+                    <!-- /.questions-right -->
+    
+                </div>
+                <!-- /.questions__wrap -->
+    
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.questions -->
+
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer">
         <div class="container">
 
-            <div class="sale__wrap">
+            <div class="footer__wrap">
 
-                <div class="sale-left">
-                    
-                    <div class="sale-item">
+                <div class="footer-left">
 
-                        <div class="sale-item__body">
-                            <!-- <span class="v-sale">Акция</span> -->
-                            <h2 class="sale-item__title">Скидки на детали тормозной системы</h2>
-                            <a href="#" class="btn sale-item__link"><i class="btn-arrow"></i> Подробнее</a>
-                            <span class="sale-item__info">Акция действует с 15.05.2021 по 30.05.2021</span>
+                    <div class="footer__logo">
+                        <div class="logo">
+                            <div class="logo__img">
+                                <img src="images/logo.png" alt="Логотип Euro Asia">
+                            </div>
+                            <span class="logo__descr">
+                                Запчасти для европейских<br>и корейских машин
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.footer-left -->
+
+                <div class="footer-right">
+
+                    <div class="footer-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Скидки и акции</a></li>
+                                <li><a href="#">Каталог товаров</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts__title">Наши контакты:</div>
+
+                        <div class="footer-contacts-item">
+                            <div class="footer-contacts-item__icon">
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/sprite.svg#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="footer-contacts-item__txt">
+                                Наша электронная почта:
+                                <span>
+                                    <a href="mailto:example@mail.ru">example@mail.ru</a>
+                                </span>
+                            </div>
                         </div>
 
-                        <div class="sale-item__img">
-                            <img src="images/sale/sale-img-1.jpg" alt="">
+                        <div class="footer-contacts-item">
+                            <div class="footer-contacts-item__icon">
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/sprite.svg#map"></use>
+                                </svg>
+                            </div>
+                            <div class="footer-contacts-item__txt">
+                                <address>г. Хабаровск, ул. Индустриальная, 7</address>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-contacts-item">
+                            <div class="footer-contacts-item__icon">
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/sprite.svg#mobile"></use>
+                                </svg>
+                            </div>
+                            <div class="footer-contacts-item__txt">
+                                По будням: с 9:00-18:00
+                                <span>
+                                    <a href="tel:+78888822225">+ 7 (888) 88-22-225</a>
+                                </span>
+                            </div>
                         </div>
 
                     </div>
-                    <!-- /.sale-item -->
+
+                    <div class="footer-pay">
+                        <div class="footer-pay__title">Мы принимаем:</div>
+
+                        <div class="footer-pay__wrap">
+
+                            <div class="footer-pay-item">
+                                <img src="images/pay/mc.svg" alt="MasterCard">
+                            </div>
+
+                            <div class="footer-pay-item">
+                                <img src="images/pay/mir.svg" alt="Mir">
+                            </div>
+
+                            <div class="footer-pay-item">
+                                <img src="images/pay/qiwi.svg" alt="Qiwi">
+                            </div>
+
+                            <div class="footer-pay-item">
+                                <img src="images/pay/visa.svg" alt="Visa">
+                            </div>
+
+                            <div class="footer-pay-item">
+                                <img src="images/pay/wm.svg" alt="WebMoney">
+                            </div>
+
+                            <div class="footer-pay-item">
+                                <img src="images/pay/ya.svg" alt="Yandex">
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
-                <!-- /.promo-left -->
-
-                <div class="sale-right">
-
-                </div>
+                <!-- /.footer-right -->
 
             </div>
+            <!-- /.footer__wrap -->
 
         </div>
         <!-- /.container -->
-    </section>
-    <!-- /.sale -->
 
+        <div class="footer-bottom">
+            <div class="container">
+
+                <div class="footer-bottom__wrap">
+                    <div class="footer-copy">
+                        © «Euro-Asia», 2020
+                    </div>
+    
+                    <div class="footer-policy">
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer-bottom -->
+
+    </footer>
+    <!-- /.footer -->
+
+    <script src="js/svgxuse.js" defer></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

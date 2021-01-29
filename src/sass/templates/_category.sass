@@ -1,0 +1,76 @@
+.category
+    margin-bottom: 50px
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        grid-gap: 20px 20px
+    &-item
+        display: flex
+        align-items: center
+        padding: 23px
+        background: #FFFFFF
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        transition: all 0.1s
+        &:hover
+            background: $c-pri
+            .category-item__svg
+                fill: #ffffff
+            .category-item__title
+                color: #ffffff
+        &__svg
+            width: 45px
+            height: 45px
+            fill: #626262
+        &__title 
+            padding-left: 20px
+            font-weight: normal
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+    &-all
+        position: relative
+        margin-top: 20px
+        text-align: center
+        &__btn
+            &::before, 
+            &::after
+                content: ''
+                position: absolute
+                top: 50% 
+                transform: translateY(-50%)
+                width: 100px
+                height: 1px
+                background-color: $c-sec
+                transition: all 0.3s
+            &::before
+                left: -120px
+            &::after
+                right: -120px
+            &:hover
+                &::before
+                    left: -110px
+                    animation: category-all-before 0.3s ease 
+                &::after
+                    right: -110px
+                    animation: category-all-after 0.3s ease 
+
+@keyframes category-all-after
+    0%
+        right: -120px
+    100%
+        right: -110px
+        
+@keyframes category-all-before
+    0%
+        left: -120px
+    100%
+        left: -110px
+
+@media all and (-ms-high-contrast: none) 
+    .category__wrap
+        display: -ms-grid
+        -ms-grid-columns: repeat(4, 1fr)
+        -ms-grid-rows: repeat(3, 1fr)
+        margin: 0 10px 10px 0

@@ -1,11 +1,7 @@
 .sale
+    margin-bottom: 50px
     &__wrap
-        display: flex
         min-height: 350px
-    &-left
-        flex-basis: 65%
-    &-right
-        flex-basis: 35%
     &-item
         display: flex
         background: #FFFFFF
@@ -13,8 +9,9 @@
         border-radius: 5px
         overflow: hidden
         &__body 
+            position: relative
             padding: 80px 20px
-            flex-basis: 60%
+            flex-basis: 55%
         &__title 
             margin-bottom: 25px
             font-weight: 600
@@ -23,9 +20,68 @@
         &__info
             display: block
             margin-top: 25px
+            font-weight: normal
+            font-size: 13px
+            line-height: 16px
         &__img
-            flex-basis: 40%
+            flex-basis: 45%
             overflow: hidden
             img 
                 width: auto
                 height: 100%
+
+.sale-item-small
+    .sale-item
+        padding: 20px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &__title 
+            margin-bottom: 10px
+            display: block
+            font-size: 18px
+            line-height: 22px
+            font-weight: normal
+
+.sale__wrap
+    display: grid
+    grid-template-columns: 1.14fr 0.8fr
+    grid-template-rows: 1fr
+    gap: 20px 20px
+    grid-template-areas: "sale-item-big sale-item-small"
+
+.sale-item-big  
+    grid-area: sale-item-big 
+
+.sale-item-small 
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(2, 1fr)
+    gap: 20px 20px
+    grid-template-areas: "." "."
+    grid-area: sale-item-small
+
+@media all and (-ms-high-contrast: none) 
+    .sale__wrap
+        display: -ms-grid
+        -ms-grid-columns: 1.14fr 0.8fr
+        -ms-grid-rows: 1fr
+        gap: 20px 20px
+
+    .sale-item-big 
+        -ms-grid-row: 1
+        -ms-grid-row-span: 1
+        -ms-grid-column: 1
+        -ms-grid-column-span: 1
+
+    .sale-item-small 
+        display: -ms-grid
+        -ms-grid-columns: 1fr
+        -ms-grid-rows: repeat(2, 1fr)
+        gap: 20px 20px
+        -ms-grid-row: 1
+        -ms-grid-row-span: 1
+        -ms-grid-column: 2
+        -ms-grid-column-span: 2
+    
+

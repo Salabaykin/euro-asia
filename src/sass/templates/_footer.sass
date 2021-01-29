@@ -1,0 +1,92 @@
+.footer
+    background-color: #ffffff
+    &-bottom
+        padding: 20px 0
+        background: rgba(0, 0, 0, 0.02)
+        border-top: 1px solid rgba(0, 0, 0, 0.15)
+        &__wrap
+            display: flex
+            align-items: center
+    &-copy
+        margin-right: 70px
+        font-weight: normal
+        font-size: 13px
+    &-policy
+        display: flex
+        align-items: center
+        a 
+            display: block
+            font-weight: normal
+            font-size: 13px
+        a:not(:last-child)
+            margin-right: 20px
+            padding-right: 20px
+            border-right: 1px solid #000000
+    &__wrap 
+        padding: 40px 0
+        display: flex
+    &-left
+        flex-basis: 40% 
+    &-right
+        display: flex
+        justify-content: space-between
+        flex-basis: 60%
+    &-nav
+        ul 
+            li 
+                margin-bottom: 10px
+                a
+                    font-size: 16px
+    &-contacts
+        &__title
+            margin-bottom: 15px
+            font-weight: normal
+            font-size: 16px
+        &-item
+            margin-bottom: 8px
+            display: flex
+            &__icon
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 45px
+                height: 45px
+                background: $c-sec
+                border-radius: 5px
+                .icon-svg
+                    width: 18px
+                    height: 18px
+            &__txt
+                max-width: 195px
+                margin-top: 5px
+                margin-left: 15px
+                font-weight: normal
+                font-size: 13px
+                line-height: 16px
+                address
+                    font-style: normal
+                span 
+                    a 
+                        display: block
+                        font-weight: 500
+                        font-size: 15px
+    &-pay 
+        &__title
+            margin-bottom: 15px
+            font-weight: normal
+            font-size: 16px
+        &__wrap 
+            max-width: 145px
+            display: flex
+            flex-wrap: wrap 
+            justify-content: space-between
+        &-item 
+            margin-bottom: 3px
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 70px
+            height: 48px
+            background: #FFFFFF
+            border: 1px solid #F3F3F3
+            border-radius: 4px

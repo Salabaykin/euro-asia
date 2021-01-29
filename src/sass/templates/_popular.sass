@@ -1,0 +1,81 @@
+.popular
+    margin-bottom: 50px
+    &-slider
+        &-nav 
+            position: relative
+            display: flex
+            align-items: center
+            .popular-slider-prev,
+            .popular-slider-next
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 30px
+                height: 30px
+                cursor: pointer
+            .popular-slider-prev
+                margin-right: 30px
+                transform: rotate(180deg)
+
+    &-item
+        position: relative
+        width: 100%
+        background: #FFFFFF
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        &__img
+            width: 100%
+            height: calc(100vw * 0.115)
+            overflow: hidden
+            a 
+                display: flex
+                justify-content: center
+                width: 100%
+                img 
+                    display: block
+                    width: auto
+                    height: 100%
+        &__body
+            margin: 20px
+        &__category-name
+            margin-bottom: 10px
+            a 
+                display: block
+                font-weight: 500
+                font-size: 10px
+                text-transform: uppercase
+                color: #A9A9A9
+                line-height: 16px
+        &__title 
+            margin-bottom: 20px
+            height: 55px
+            overflow: hidden
+            h3 
+                font-weight: normal
+                a
+                    font-size: 16px
+        &__price
+            margin-bottom: 20px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            font-weight: 600
+            font-size: 24px
+            span 
+                position: relative
+                font-weight: 500
+                font-size: 13px
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 0
+                    width: 100%
+                    height: 1px
+                    background-color: $c-dpri
+                    transform: rotate(7.8deg)
+        &__busket
+            width: 100%
+
+                
