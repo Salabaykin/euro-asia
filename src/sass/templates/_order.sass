@@ -1,0 +1,62 @@
+.order
+    &-container 
+        margin-bottom: 20px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto auto
+        gap: 20px 40px
+        grid-template-areas: "order-info order-address" "order-delivery order-pay"
+    &-head
+        padding: 10px 20px
+        background: #F5F5F5
+        border-radius: 4px
+        font-weight: 500
+        font-size: 13px
+    &-body
+        margin-top: 25px
+        display: flex
+        flex-wrap: wrap 
+        .input
+            padding-right: 20px
+            flex-basis: 50%
+        .checkbox
+            flex-basis: 100%
+
+.order-info  
+    grid-area: order-info 
+
+.order-address  
+    grid-area: order-address 
+
+.order-delivery  
+    grid-area: order-delivery 
+
+.order-pay  
+    grid-area: order-pay 
+
+@media all and (-ms-high-contrast: none) 
+    .grid-container 
+        display: -ms-grid
+        -ms-grid-columns: 1fr 1fr
+        -ms-grid-rows: 1fr 1fr
+    .order-info 
+        -ms-grid-row: 1
+        -ms-grid-row-span: 1
+        -ms-grid-column: 1
+        -ms-grid-column-span: 1
+    .order-address 
+        -ms-grid-row: 1
+        -ms-grid-row-span: 1
+        -ms-grid-column: 2
+        -ms-grid-column-span: 1
+    .order-delivery 
+        -ms-grid-row: 2
+        -ms-grid-row-span: 1
+        -ms-grid-column: 1
+        -ms-grid-column-span: 1
+    .order-pay 
+        -ms-grid-row: 2
+        -ms-grid-row-span: 1
+        -ms-grid-column: 2
+        -ms-grid-column-span: 1
+  

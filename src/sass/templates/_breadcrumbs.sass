@@ -1,0 +1,23 @@
+.breadcrumbs
+    margin-bottom: 50px
+    &__list
+        li 
+            position: relative
+            display: inline
+            margin-right: 5px
+            padding-right: 25px
+            &::after
+                content: ''
+                position: absolute
+                top: 50% 
+                transform: translateY(-50%)
+                right: 0
+                width: 17px
+                height: 18px
+                background: url('../images/icons/link-arrow-dark.svg')
+                background-size: cover  
+            &:last-child
+                &::after
+                    display: none
+        li.active
+            font-weight: 500

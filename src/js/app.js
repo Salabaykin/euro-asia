@@ -66,5 +66,26 @@ document.addEventListener("DOMContentLoaded", function() {
   cropText('.popular-item__title a', 41);
   cropText('.popular-item__category-name a', 30);
 
+  // Amount
+  const basketAmount = document.querySelectorAll('.basket-amount');
+  basketAmount.forEach(item => {
+    const input = item.querySelector('.basket-amount__input');
+    input.value = 1;
+    item.addEventListener('click', (event) => {
+      const target = event.target;
+      let count = input.value;
+      if (target.closest('.basket-amount__btn-plus')) {
+        if (count < 999) {
+          count++;
+        }
+      } else if (target.closest('.basket-amount__btn-minus')) {
+        if (count != '1') {
+          count--;
+        } 
+      } 
+      input.value = count;
+    });
+  });
+
 });
 

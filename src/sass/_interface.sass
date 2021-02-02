@@ -69,10 +69,16 @@
         align-items: center
         justify-content: center
         .icon-svg
-            margin-right: 10px
             width: 18px
             height: 15px
             fill: #ffffff
+        span 
+            margin-left: 10px
+    &-delete
+        text-align: center
+        background: transparent
+        color: #626262 
+        font-size: 15px
 
 @keyframes link-arrow
     0%
@@ -102,3 +108,70 @@
         font-weight: 500
         font-size: 24px
         color: #000000
+
+.input
+    display: flex
+    flex-direction: column
+    margin-bottom: 15px
+    label
+        display: block
+        padding-bottom: 10px
+        font-weight: 500
+        font-size: 13px
+        span 
+            margin-left: 5px
+            color: $c-pri
+    input 
+        height: 40px
+        padding: 5px 10px
+        background: #FFFFFF
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        border-radius: 4px
+        font-size: 14px
+
+.checkbox input[type="radio"]
+    display: none
+.checkbox label::before
+    content: ''
+    display: inline-block
+    height: 23px
+    width: 23px
+    border: none
+    background-color: #eee
+.checkbox label::after 
+    content: ''
+    display: inline-block
+    height: 8px
+    width: 11px
+    border-left: 3px solid $c-pri
+    border-bottom: 3px solid $c-pri
+    transform: rotate(-45deg)
+.checkbox label 
+    display: inline-flex
+    align-items: center
+    position: relative
+    padding-left: 38px
+    margin-bottom: 10px
+    cursor: pointer
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    .footer-pay-item
+        margin-bottom: 0
+        margin-right: 3px
+.checkbox label::before,
+.checkbox label::after 
+    position: absolute
+.checkbox label::before 
+    left: 0
+.checkbox label::after 
+    left: 9px
+    top: 43%
+    transform: rotate(-45deg) translateY(-50%)
+.checkbox input[type="radio"] + label::after 
+    content: none
+.checkbox input[type="radio"]:checked + label::after 
+    content: ''

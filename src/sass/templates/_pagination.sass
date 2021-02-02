@@ -1,0 +1,23 @@
+.pagination
+    margin-top: 25px
+    background-color: #F5F5F5
+    padding: 15px
+    border-radius: 4px
+    &__list
+        display: flex
+        align-items: center
+        justify-content: center
+    &-item
+        a 
+            display: flex 
+            align-items: center
+            justify-content: center
+            width: 30px
+            height: 30px
+            border-radius: 4px
+            background-color: $c-pri
+            color: #ffffff
+            &:hover
+                background-color: $c-dpri
+        &:not(:last-child)
+            margin-right: 15px

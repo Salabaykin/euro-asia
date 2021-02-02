@@ -1,0 +1,20 @@
+.catalog
+    &-list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(auto, 1fr)
+        grid-gap: 20px 20px
+    &-group 
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 1fr
+        gap: 15px 15px
+        .basket-amount
+            margin-right: 15px
+
+@media all and (-ms-high-contrast:none) 
+    .grid-container 
+        display: -ms-grid
+        -ms-grid-columns: repeat(4, 1fr)
+        -ms-grid-rows: 1fr
+        gap: 15px 15px
