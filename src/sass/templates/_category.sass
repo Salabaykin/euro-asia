@@ -19,6 +19,9 @@
                 fill: #ffffff
             .category-item__title
                 color: #ffffff
+        &__icon
+            display: flex
+            align-items: center
         &__svg
             width: 45px
             height: 45px
@@ -56,6 +59,13 @@
                     right: -110px
                     animation: category-all-after 0.3s ease 
 
+.category-item.active
+    background: $c-pri
+    .category-item__svg
+        fill: #ffffff
+    .category-item__title
+        color: #ffffff
+
 @keyframes category-all-after
     0%
         right: -120px
@@ -74,3 +84,40 @@
         -ms-grid-columns: repeat(4, 1fr)
         -ms-grid-rows: repeat(3, 1fr)
         margin: 0 10px 10px 0
+
+    
+@media screen and ( max-width: 1100px )
+    .category
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-template-rows: repeat(auto, 1fr)
+            grid-gap: 15px 15px
+    
+@media screen and ( max-width: 991px )
+    .category
+        &__wrap
+            grid-template-columns: repeat(2, 1fr)
+
+@media screen and ( max-width: 768px )
+    .category-item__title 
+        font-size: 14px
+    .category 
+        margin-bottom: 30px
+    
+@media screen and ( max-width: 720px )
+    .category
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+
+@media screen and ( max-width: 576px )
+    .category-item 
+        padding: 15px
+    .category-item__svg
+        width: 40px
+        height: 40px
+    .category-all__btn
+        width: 100%
+    .category-all__btn::before, 
+    .category-all__btn::after
+        display: none

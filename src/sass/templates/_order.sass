@@ -60,3 +60,16 @@
         -ms-grid-column: 2
         -ms-grid-column-span: 1
   
+
+@media screen and ( max-width: 991px )
+    .order
+        &-container 
+            grid-template-columns: 1fr
+            grid-template-rows: auto
+            gap: 20px 20px
+            grid-template-areas: "order-info" "order-address" "order-delivery" "order-pay"
+
+@media screen and ( max-width: 500px )
+    .order-body .input
+        flex-basis: 100%
+        padding-right: 0

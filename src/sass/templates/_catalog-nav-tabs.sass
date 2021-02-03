@@ -1,5 +1,6 @@
 .catalog-nav
     display: none
+    opacity: 0
     position: absolute
     z-index: -1
     top: 60px
@@ -55,7 +56,7 @@
         &__content 
             display: none
     .catalog-item
-        width: 25%
+        width: 210px
         margin-bottom: 20px
         padding-right: 30px
         &__list 
@@ -84,3 +85,11 @@
 
 .catalog-nav.show
     display: block
+    opacity: 1
+    animation: show 0.3s ease 
+
+@keyframes show
+    0%
+        opacity: 0
+    100%
+        opacity: 1

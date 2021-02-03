@@ -9,13 +9,13 @@
             background: #F5F5F5
             border: none !important
     &-row 
+        position: relative
         display: table-row
         margin-bottom: 10px
     &-col 
         vertical-align: middle
         padding: 15px
         display: table-cell
-        background: #FFFFFF
         font-size: 13px
         border-top: 1px solid rgba(0, 0, 0, 0.15)
         border-bottom: 1px solid rgba(0, 0, 0, 0.15)
@@ -33,7 +33,7 @@
         &-delete
             text-align: center
         &-photo
-            max-width: 70px
+            width: 65px
         &-basket
             max-width: 200px
             text-align: right
@@ -44,3 +44,44 @@
                 margin-right: 10px
             .btn-basket
                 width: auto
+        &-status
+            color: #09C406
+
+@media screen and ( max-width: 1100px )
+    .table-col-basket 
+        max-width: 240px
+
+@media screen and ( max-width: 991px )
+    .table-col.brand,
+    .table-col.count
+        display: none
+    .table-col.articul
+        border-left: 1px solid rgba(0,0,0,0.15)
+        border-radius: 4px 0 0 4px
+
+@media screen and ( max-width: 768px )
+    .table-row.table-head
+        display: none
+    .table-col
+        width: 100% !important
+        max-width: 100% !important
+        border-bottom: none 
+        border-top: none
+        padding-bottom: 0
+    .table-row
+        display: flex
+        padding-bottom: 15px
+        flex-direction: column
+        border: 1px solid rgba(0,0,0,0.15)
+        border-radius: 4px
+    .table-col,
+    .table-col:first-child,
+    .table-col:last-child
+        border-left: none !important
+        border-right: none !important
+        border-radius: 0 !important
+    .table-col-basket
+        text-align: left
+    .table-col-name
+        font-weight: 600
+    

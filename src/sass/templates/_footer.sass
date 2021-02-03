@@ -80,14 +80,48 @@
             max-width: 145px
             display: flex
             flex-wrap: wrap 
-            justify-content: space-between
         &-item 
             margin-bottom: 3px
+            margin-right: 3px
             display: flex
             align-items: center
             justify-content: center
-            width: 70px
+            width: 65px
             height: 48px
             background: #FFFFFF
             border: 1px solid #F3F3F3
             border-radius: 4px
+
+@media screen and ( max-width: 1024px )
+    .footer__wrap
+        flex-wrap: wrap
+    .footer-left,
+    .footer-right
+        flex-basis: 100%
+    .footer-left
+        margin-bottom: 40px
+
+@media screen and ( max-width: 768px )
+    .footer-right
+        flex-wrap: wrap
+    .footer-bottom__wrap
+        flex-direction: column
+    .footer-copy
+        margin-right: 0
+    .footer-policy
+        flex-wrap: wrap
+        flex-direction: column
+    .footer-policy a:not(:last-child) 
+        margin-right: 0
+        padding-right: 0
+        border-right: none
+
+@media screen and ( max-width: 680px )
+    .footer-right
+        flex-direction: column
+    .footer-pay__wrap
+        max-width: 100%
+    .footer-nav,
+    .footer-contacts
+        margin-bottom: 20px
+    
